@@ -61,18 +61,26 @@ drive_add_component(adapter)
 drive_add_component(engine)
 
 # ========================
-# App
+# Apps
 # ========================
 if(DRIVE_BUILD_APP)
-    if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/app/CMakeLists.txt")
-        add_subdirectory(app)
+    if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/apps/CMakeLists.txt")
+        add_subdirectory(apps)
     else()
-        message(FATAL_ERROR "[drive] app/ exists but CMakeLists.txt is missing")
+        message(STATUS "[drive] apps/ present but no apps/CMakeLists.txt yet, skipping")
     endif()
 else()
-    message(STATUS "[drive] app disabled")
+    message(STATUS "[drive] apps disabled")
 endif()
 
+# ========================
+# Services
+# ========================
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/services/CMakeLists.txt")
+    add_subdirectory(services)
+else()
+    message(STATUS "[drive] services/ missing or has no CMakeLists.txt, skipping")
+endif()
 # ========================
 # Root package config
 # ========================

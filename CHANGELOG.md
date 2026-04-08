@@ -5,6 +5,22 @@ All notable changes to the **app module** are documented in this file.
 The `app` module is responsible for **orchestrating the system**, including module wiring, lifecycle management, and runtime coordination.
 
 ---
+## [v0.2.0]
+
+### Improvements
+
+- introduce CLI-based entrypoint for `drive_api`
+- integrate Softadastra CLI for command handling (`serve`, `help`, `version`)
+- improve project structure:
+  - add `apps/` and `services/` modular layout
+  - add dedicated CMake configuration for services
+- improve build system consistency across components and services
+
+### Fixes
+
+- fix Softadastra dependency resolution in adapter (use `find_package`)
+- fix build failures due to missing CMake targets and sources
+- fix command routing (proper handling of CLI arguments)
 
 ## [0.1.0] - Initial Application Orchestrator
 
