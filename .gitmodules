@@ -1,0 +1,12 @@
+[submodule "components/engine"]
+	path = components/engine
+	url = git@github.com:softadastra/drive-engine.git
+	branch = dev
+[submodule "components/watcher"]
+	path = components/watcher
+	url = git@github.com:softadastra/drive-watcher.git
+	branch = dev
+[submodule "components/adapter"]
+	path = components/adapter
+	url = git@github.com:softadastra/drive-adapter.git
+	branch = dev
