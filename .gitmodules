@@ -10,3 +10,23 @@
 	path = components/adapter
 	url = git@github.com:softadastra/drive-adapter.git
 	branch = dev
+[submodule "apps/web"]
+	path = apps/web
+	url = git@github.com:softadastra/drive-web.git
+	branch = dev
+[submodule "apps/cli"]
+	path = apps/cli
+	url = git@github.com:softadastra/drive-cli.git
+	branch = dev
+[submodule "apps/desktop"]
+	path = apps/desktop
+	url = git@github.com:softadastra/drive-desktop.git
+	branch = dev
+[submodule "apps/mobile"]
+	path = apps/mobile
+	url = git@github.com:softadastra/drive-mobile.git
+	branch = dev
+[submodule "apps/bridge"]
+	path = apps/bridge
+	url = git@github.com:softadastra/drive-bridge.git
+	branch = dev

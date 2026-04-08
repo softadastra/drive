@@ -1,0 +1,7 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(drive_watcher REQUIRED)
+find_dependency(drive_adapter REQUIRED)
+find_dependency(drive_engine REQUIRED)
